@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    </head>
+
+    <body>
+        <button class="button">bas bana</button>
+        <button class="button2">basma bana</button>
+    </body>
+
+    <script>
+        const items = [];
+        console.log(items);
+        document.querySelector('.button').addEventListener('click', function() {
+            alert('Button clicked!');
+            items.push('item');
+            console.log(items);
+        });
+        document.querySelector('.button2').addEventListener('click', function() {
+            alert('Button2 clicked!');
+            items.push('item2');
+            console.log(items);
+        });
+    </script>
+</html>
