@@ -1,0 +1,8 @@
+<iframe id="12893579" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=12893579"></iframe>
+<script nonce="chesscom-diagram">
+  window.addEventListener("message", e => {
+    if (e.data && "12893579" === e.data.id && document.getElementById(`${e.data.id}`)) {
+      document.getElementById(`${e.data.id}`).style.height = `${e.data.frameHeight + 37}px`;
+    }
+  });
+</script>
