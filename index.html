@@ -14,7 +14,7 @@
       /* Genel Stiller */
       body {
         margin: 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         background-color: #f4f4f4;
         color: white;
       }
@@ -22,7 +22,7 @@
       /* Hero Alanı */
       .hero {
         position: relative;
-        background-image: url('pics/background-image.jpg');
+        background-image: url("pics/background-image.jpg");
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -269,33 +269,35 @@
     <div class="hero">
       <h1>Yaz İndirimleri Başladı!</h1>
       <p>Bisikletinizi şimdi alın, muazzam fırsatları kaçırmayın!</p>
-      <button>Hemen Alışverişe Başla</button>
+      <button
+        onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})"
+      >
+        Hemen Alışverişe Başla
+      </button>
     </div>
 
     <!-- Menü -->
     <div class="header">
-      <img class="logo-top" src="pics/logo.png" alt="Logo" />
+      <a href="index.html"
+        ><img class="logo-top" src="pics/logo.png" alt="Logo"
+      /></a>
       <div class="menu-toggle">
         <div></div>
         <div></div>
         <div></div>
       </div>
       <nav>
-        <a href="#">Anasayfa</a>
-        <a href="#">Bisikletler</a>
-        <a href="#">Hakkımızda</a>
-        <a href="#">İletişim</a>
-        <a href="#">Sepet</a>
+        <a href="index.html">Anasayfa</a>
+        <a href="about.html">Hakkımızda</a>
+        <a href="contact.html">İletişim</a>
       </nav>
     </div>
 
     <!-- Kayarak Açılan Menü -->
     <div class="menu">
-      <a href="#">Anasayfa</a>
-      <a href="#">Bisikletler</a>
-      <a href="#">Hakkımızda</a>
-      <a href="#">İletişim</a>
-      <a href="#">Sepet</a>
+      <a href="index.html">Anasayfa</a>
+      <a href="about.html">Hakkımızda</a>
+      <a href="contact.html">İletişim</a>
     </div>
 
     <!-- Bisikletler Bölümü -->
@@ -305,31 +307,36 @@
         <div class="home-bike-img">
           <img src="pics/bike1.jpg" alt="Bisiklet 1" />
           <div class="home-bike-text">
-            <button class="home-bike-cart">Sepete Ekle</button>
+            <a href="bisiklet1.html"
+              ><button class="home-bike-cart">İncele</button></a
+            >
           </div>
         </div>
         <div class="home-bike-img">
           <img src="pics/bike2.jpeg" alt="Bisiklet 2" />
           <div class="home-bike-text">
-            <button class="home-bike-cart">Sepete Ekle</button>
+            <a href="bisiklet2.html"
+              ><button class="home-bike-cart">İncele</button></a
+            >
           </div>
         </div>
         <div class="home-bike-img">
           <img src="pics/bike3.jpeg" alt="Bisiklet 3" />
           <div class="home-bike-text">
-            <button class="home-bike-cart">Sepete Ekle</button>
+            <a href="bisiklet3.html"
+              ><button class="home-bike-cart">İncele</button></a
+            >
           </div>
         </div>
       </div>
     </div>
 
-
     <script>
-      const menuToggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.menu');
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
 
-      menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('open');
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("open");
       });
     </script>
   </body>
